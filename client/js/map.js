@@ -14,22 +14,22 @@ function initialize() {
 
     map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 
-    google.maps.event.addListener(map, "click", function(event) {
-        var lat = event.latLng.lat();
-        var lng = event.latLng.lng();
-
-        var uluru = {lat: lat, lng: lng};
-        // placeMarker(event.latLng);
-        placeMarker(uluru);
-
-        // sample
-        // var uluru = {lat: 7.955877163205325, lng: 80.62591552734375};
-
-        console.log(uluru);
-
-
-        //alert("Lat=" + lat + "; Lng=" + lng);
-    });
+    // google.maps.event.addListener(map, "click", function(event) {
+    //     var lat = event.latLng.lat();
+    //     var lng = event.latLng.lng();
+    //
+    //     var uluru = {lat: lat, lng: lng};
+    //     // placeMarker(event.latLng);
+    //     placeMarker(uluru);
+    //
+    //     // sample
+    //     // var uluru = {lat: 7.955877163205325, lng: 80.62591552734375};
+    //
+    //     console.log(uluru);
+    //
+    //
+    //     //alert("Lat=" + lat + "; Lng=" + lng);
+    // });
 }
 
 
@@ -63,7 +63,6 @@ function placeMarker(location) {
 }
 
 function centerZoom(location){
-  console.log('lll');
   map.panTo(location);
   map.setZoom(10);
   // smoothZoom(map, 10, map.getZoom());

@@ -38,7 +38,7 @@
           </div>
 
           <div class="col-sm-4 font-bold h4">
-            <p class="font-bold col-purple" id ="angleText"> </p>
+            <p class="font-bold col-blue" id ="angleText"> </p>
 
           </div>
         </div>
@@ -169,11 +169,12 @@ var  validator1 = $("#locationForm").validate({
 
       var wavesurfer = WaveSurfer.create({
           container: '#waveform',
-          waveColor: 'violet',
-          progressColor: 'purple',
+          waveColor: '#2196F3',
+          progressColor: '#607D8B',
 
           barWidth : 0.5,
-          normalize : true
+          normalize : true,
+          splitChannels: true
 
       });
 
@@ -217,7 +218,7 @@ var  validator1 = $("#locationForm").validate({
           updateLocationTimestamp(selectLocation);
       });
 
-  
+
 
 
       timetamp.on( "change",function() {
