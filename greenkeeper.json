@@ -1,0 +1,10 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "client/plugins/ckeditor/package.json",
+        "client/plugins/tinymce/package.json"
+      ]
+    }
+  }
+}
